@@ -1,0 +1,55 @@
+
+HTML (index.html)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Hayana Love</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heart-text">I am so sorry Hayana</h1>
+    </div>
+</body>
+</html>
+
+CSS (styles.css)
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path fill="%23ff69b4" d="M50 91s-7.5-4.8-15-12.4C24.5 68.8 10 52.5 10 36.5 10 24 22 14 35 14c7 0 14 3.5 15 4 1-0.5 8-4 15-4 13 0 25 10 25 22.5 0 16-14.5 32.3-25 42.1-7.5 7.6-15 12.4-15 12.4z"/></svg>') repeat;
+    background-size: 20px 20px;
+    filter: blur(5px);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.heart-text {
+    font-size: 5rem;
+    color: transparent;
+    background: linear-gradient(135deg, #800080 25%, #e68ae6 25%, #e68ae6 50%, #800080 50%, #800080 75%, #e68ae6 75%, #e68ae6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
